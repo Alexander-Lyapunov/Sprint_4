@@ -9,6 +9,9 @@ class TestBooksCollector:
         assert "Гарри Поттер и философский камень" in collector.get_books_genre()
 
     @pytest.mark.parametrize("book_name", [
+        "а" * 1,
+        "а" * 2,
+        "а" * 39,
         "а" * 40,
         "Гарри Поттер"
     ])
@@ -28,11 +31,6 @@ class TestBooksCollector:
         collector.add_new_book("Преступление и наказание")
         collector.set_book_genre("Преступление и наказание", "Детективы")
         assert collector.get_book_genre("Преступление и наказание") == "Детективы"
-
-    def test_get_book_genre(self, collector):
-        collector.add_new_book("Война и мир")
-        collector.set_book_genre("Война и мир", "Детективы")
-        assert collector.get_book_genre("Война и мир") == "Детективы"
 
     def test_get_books_with_specific_genre(self, collector):
         collector.add_new_book("Гарри Поттер и узник Азкабана")

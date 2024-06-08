@@ -19,14 +19,13 @@
 1. `test_add_new_book` - проверяет добавление новой книги.
 2. `test_add_new_book_length_positive` - проверяет корректность добавления книги с допустимой длиной названия.
 3. `test_add_new_book_length_negative` - проверяет, что книги с недопустимой длиной названия не добавляются.
-4. `test_set_book_genre` - проверяет установку жанра книги.
-5. `test_get_book_genre` - проверяет получение жанра книги.
-6. `test_get_books_with_specific_genre` - проверяет получение списка книг с определённым жанром.
-7. `test_get_books_genre` - проверяет получение словаря books_genre.
-8. `test_get_books_for_children` - проверяет получение списка книг, подходящих детям.
-9. `test_add_book_in_favorites` - проверяет добавление книги в избранное.
-10. `test_delete_book_from_favorites` - проверяет удаление книги из избранного.
-11. `test_get_list_of_favorites_books` - проверяет получение списка избранных книг.
+4. `test_set_book_genre` - проверяет установку и получение жанра книги.
+5. `test_get_books_with_specific_genre` - проверяет получение списка книг с определённым жанром.
+6. `test_get_books_genre` - проверяет получение словаря books_genre.
+7. `test_get_books_for_children` - проверяет получение списка книг, подходящих детям.
+8. `test_add_book_in_favorites` - проверяет добавление книги в избранное.
+9. `test_delete_book_from_favorites` - проверяет удаление книги из избранного.
+10. `test_get_list_of_favorites_books` - проверяет получение списка избранных книг.
 
 ## Параметризованные тесты
 
